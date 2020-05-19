@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
+    <title>Exercici</title>
+    <!-CSS->
+        <!-Normalize->
+            <link rel="stylesheet" href="CSS/normalize.css">
+            <!-Full d'estil CSS->
+                <link rel="stylesheet" href="CSS/estil.css">
+                <!-Full d'animacions CSS->
+                    <link rel="stylesheet" href="CSS/animations.css">
+                    <!-Google Fonts->
+                        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
 
-   <h1>El meu Portfoli</h1>
-</body>
-</html>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="container">
+        <header class="floating">
+            <div class="slideLeft">
+                <h1>Cristian Morenilla Rodriguez</h1>
+            </div>
+            <h2>Programador 2D/3D</h2>
+        </header>
+        <!-MENÚ->
+            <nav class=container-flex>
+                <button class="button-flex unitat-flex boto" onclick="location.href='#quisoc'" type="button">Quien soy</button>
+                <button class="button-flex unitat-flex boto" onclick="location.href='#trabajo'" type="button">Demo Reel</button>
+                <button class="button-flex unitat-flex boto" onclick="location.href='#Contacto'" type="button">Contacto</button>
+            </nav>
+            <!-Cabecera->
+                <section class="container-flex">
+                    <div class=container-flex-2>
+                        <h3 class="destacado floatingg">Este es mi portfolio.</h3>
+                    </div>
+                    <!-About->
+                        <div id="quisoc" class="container-flex-3x">
+                            <h2 class="slideUp">Quien soy</h2>
+                            <hr>
+                            <p>Hola, mi nombre es Cristian Morenilla Rodriguez programador de videojuegos 2D/3D. Vengo de un ciclo formativo de grado medio de informática y actualmente estoy haciendo un CFGS (ciclo formativo grado superior) de Animaciones 3D juegos y entornos interactivos en Teknos.
+                            </p>
+                            <p>Desde bien pequeño me han gustado el anime/manga y videojuegos y a medida que crecía me fui decantando más por el mundo de la programación, siempre tenía esa curiosidad de que hay detrás de un juego en el ámbito de la programación.</p>
+                            <p>Destacar que tengo experiencia laboral en formación dual el cual hice en segundo de Grado Medio.
+                                Estuve en la empresa del pueblo donde vivo, Berga, llamado Inforber Serveis SL, situado en Carrer Prat de la Riba, 3, 5, 08600 Berga, Barcelona</p>
+                        </div>
+                </section>
+                <!-Works->
+                    <section>
+                        <div id="trabajo">
+                            <h2>Demo Reel</h2>
+                            <p>Esto es un pequeño montaje con comentarios a cerca de los ejercicios que he ido haciendo a lo largo de este curso. También más adelante iré añadiendo capturas y/o videos sobre programación, pequeños juegos que he hecho a lo largo de este año y los que haya hecho por cuenta propia.</p>
+                            <video controls width="1200px" height="550px">
+                                <source src="Videos/Demo_reel.mp4" type="video/webm">
+                                <source src="Videos/demo_reel.ogg" type="video/pgg">
+                                <source src="videos/demo_reel.webm" type="video/mp4">
+                                <track label="Español" kind="subtitles" srclang="es" src="Subtitulos/subtitulos_es.vtt" default>
+                            </video>
+                        </div>
+                    </section>
+                    <section class="noflex">
+                        <h2>Herramientas</h2>
+                        <div>
+                            <p>Esto son los programas que uso actualmente aunque me quiero enfocar mas en programacion en java en un futuro cercano.</p>
+                        </div>
+                        <img class="iconos" src="img/noun_CSS_733383.svg" alt="CSS" width="5%">
+                        <img class="iconos" src="img/noun_html_3283010.svg" alt="HTML5" width="5%">
+                        <img class="iconos" src="img/noun_photoshop_538368.svg" alt="photoshop" width="5%">
+                        <img class="iconos" src="img/maya-2017.svg" alt="Maya-2019" width="5%">
+                        <img class="iconos" src="img/unity-69.svg" alt="Unity" width="5%">
+                    </section>
+                    <!-Contact->
+                        <section>
+                            <div id="Contacto">
+                                <h2>Contacto</h2>
+                                <p>
+                                    Podeis contactar conmigo via mail y en discord
+                                </p>
+                                <div>
+                                    <p>
+                                        <strong>Gmail:</strong> cmorenilla300@gmail.com <br>
+                                        <strong>Discord:</strong>Cristian#6022
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+    </div>
+    <footer id="footer">
+        <div class="slideLeft">
+            Teléfono de contacto 674 00 22 64. Correo, cmorenilla300@gamil.com
+        </div>
+    </footer>
+</body></html>

@@ -144,7 +144,7 @@ section {
 }
 
 .iconos {
-    width: 11%;
+    width: 9%;
 }
 
 @media only screen and (max-width: 600) {
@@ -182,7 +182,7 @@ section {
 .fletxaDreta-slider {
     position: absolute;
     top: 50%;
-    left: 23%;
+    left: 17.8%;
     transform: translate(0%, -50%);
     */
 }
@@ -190,9 +190,11 @@ section {
 .fletxaEsquerra-slider {
     position: absolute;
     top: 50%;
-    right: 22.8%;
+    right: 17%;
     transform: translate(0%, -50%);
 }
+
+
 
 
 .mySlides {

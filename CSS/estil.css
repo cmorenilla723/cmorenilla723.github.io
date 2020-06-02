@@ -163,7 +163,8 @@ section {
     padding: 2px;
     margin: 6px auto;
     border-radius: 5px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton-slider {

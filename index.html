@@ -73,10 +73,13 @@
                         <img class="iconos" src="img/maya-2017.svg" alt="Maya-2019" width="5%">
                         <img class="iconos" src="img/unity-69.svg" alt="Unity" width="5%">
                     </section>
-                    <section>
-                        <img class="mySlides" src="img/maya-2017.svg" style="width:100%">
-                        <img class="mySlides" src="img/noun_CSS_733383.svg" style="width:100%">
-                    </section>
+                    <div class="container-display">
+                        <img class="mySlides" src="img/Processing_space_invaders.PNG" alt="SpaceInvaders" width="50%">
+                        <img class="mySlides" src="img/noun_CSS_733383.svg" alt="SpaceInvaders" width="100%">
+
+                        <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
                     <!-Contact->
                         <section>
                             <div id="Contacto">
@@ -100,24 +103,26 @@
         </div>
     </footer>
     <script>
-        var myIndex = 0;
-        carousel();
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-        function carousel() {
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000); // cambia la imagen cada 2s
+            x[slideIndex - 1].style.display = "block";
         }
-
     </script>
-</body>
-
-</html>
+</body></html>

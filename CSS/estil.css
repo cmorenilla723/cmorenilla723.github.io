@@ -144,7 +144,7 @@ section {
 }
 
 .iconos {
-    width: 5%;
+    width: 11%;
 }
 
 @media only screen and (max-width: 600) {
@@ -155,9 +155,50 @@ section {
 
 }
 
+.container-display {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 6px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boton-slider {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+
+.boton-slider:hover {
+    width: 30px;
+    height: 30px;
+    background-color: ghostwhite;
+}
+
+.fletxaDreta-slider {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    */
+}
+
+.fletxaEsquerra-slider {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+
 .mySlides {
     display: none;
+
 }
+
 
 @media only screen and (max-width: 580px) {
     #container {

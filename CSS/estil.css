@@ -182,7 +182,7 @@ section {
 .fletxaDreta-slider {
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 23%;
     transform: translate(0%, -50%);
     */
 }
@@ -190,7 +190,7 @@ section {
 .fletxaEsquerra-slider {
     position: absolute;
     top: 50%;
-    right: 0%;
+    right: 22.8%;
     transform: translate(0%, -50%);
 }
 

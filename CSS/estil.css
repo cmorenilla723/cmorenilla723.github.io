@@ -160,7 +160,6 @@ section {
     position: relative;
     flex-wrap: wrap;
     border: 1px solid black;
-    padding: 2px;
     margin: 6px auto;
     border-radius: 5px;
     align-items: center;
@@ -170,19 +169,24 @@ section {
 .boton-slider {
     width: 30px;
     height: 30px;
-    background-color: grey;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin: 0px 24px;
 }
 
 .boton-slider:hover {
     width: 30px;
     height: 30px;
-    background-color: ghostwhite;
+    background-color: transparent;
+    border-radius: 100%;
 }
 
 .fletxaDreta-slider {
     position: absolute;
     top: 50%;
-    left: 17.8%;
+    left: 0%;
+    color: white;
     transform: translate(0%, -50%);
     */
 }
@@ -190,8 +194,9 @@ section {
 .fletxaEsquerra-slider {
     position: absolute;
     top: 50%;
-    right: 17%;
+    right: 0%;
     transform: translate(0%, -50%);
+    color: white;
 }
 
 
